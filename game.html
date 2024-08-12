@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="buttons">
+            <button onclick="play('rock')">Rock</button>
+            <button onclick="play('paper')">Paper</button>
+            <button onclick="play('scissors')">Scissors</button>
+        </div>
+        <div class="result">
+            <p id="result-message"></p>
+        </div>
+        <div class="scoreboard">
+            <p><strong>Scoreboard</strong></p>
+            <p>Player Wins: <span id="player-wins">0</span></p>
+            <p>CPU Wins: <span id="cpu-wins">0</span></p>
+        </div>
+        <button onclick="resetGame()">Refresh</button>
+        <h4>
+            Written by Amir Hossein Nouri
+        </h4>
+    </div>
+    <script src="./game.js"></script>
+</body>
+</html>
